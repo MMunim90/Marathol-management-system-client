@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Dhaka City Marathon 2025",
+    "date": "September 20, 2025",
+    "location": "Dhaka, Bangladesh",
+    "time": "6:00 AM",
+    "distance": "Full Marathon, Half Marathon, 10K",
+    "fee": "BDT 1000",
+    "details": "A scenic run through Hatirjheel, Dhanmondi, and Gulshan, featuring live bands and water zones every 3 km."
+  },
+  {
+    "title": "Sundarbans Trail Run",
+    "date": "November 15, 2025",
+    "location": "Khulna, Bangladesh",
+    "time": "5:30 AM",
+    "distance": "25K Trail, 10K Fun Run",
+    "fee": "BDT 1500",
+    "details": "Unique off-road marathon through the buffer zones of the Sundarbans, with eco-themed medals and mangrove tree planting."
+  },
+  {
+    "title": "Sylhet Tea Garden Marathon",
+    "date": "December 5, 2025",
+    "location": "Sylhet, Bangladesh",
+    "time": "6:00 AM",
+    "distance": "Half Marathon, 5K",
+    "fee": "BDT 800",
+    "details": "Run across rolling tea gardens and hilly terrain. Includes local cultural performances and Sylheti cuisine stalls."
+  },
+  {
+    "title": "Cox’s Bazar Beach Run 2025",
+    "date": "October 18, 2025",
+    "location": "Cox’s Bazar, Bangladesh",
+    "time": "6:00 AM",
+    "distance": "10K, 21K",
+    "fee": "BDT 1200",
+    "details": "Race along the world's longest sea beach. Includes barefoot category and post-run beach yoga."
+  },
+  {
+    "title": "Rajshahi Heritage Marathon",
+    "date": "November 30, 2025",
+    "location": "Rajshahi, Bangladesh",
+    "time": "6:30 AM",
+    "distance": "10K, Half Marathon",
+    "fee": "BDT 700",
+    "details": "Experience the beauty of historic mosques, Padma River views, and mango orchard trails."
+  },
+  {
+    "title": "Padma Bridge Run 2025",
+    "date": "December 21, 2025",
+    "location": "Mawa–Zajira, Bangladesh",
+    "time": "5:45 AM",
+    "distance": "5K, 10K",
+    "fee": "BDT 1000",
+    "details": "A once-in-a-lifetime experience to run across the iconic Padma Bridge at sunrise. Includes drone photography and medal ceremony."
+  }
+]

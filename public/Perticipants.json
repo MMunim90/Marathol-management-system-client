@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Rafiq Hasan",
+    "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+    "marathonName": "Dhaka City Marathon 2025",
+    "quote": "Running isn't just a sport, it's my therapy. That's why here I am",
+    "position": "1st Place"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "photo": "https://randomuser.me/api/portraits/women/44.jpg",
+    "marathonName": "Cox’s Bazar Beach Run 2025",
+    "quote": "Every step takes me closer to my strongest self.",
+    "position": "4th Place"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Ahmed",
+    "photo": "https://randomuser.me/api/portraits/men/85.jpg",
+    "marathonName": "Padma Bridge Run 2025",
+    "quote": "The road may be long, but so is my will. I will finish",
+    "position": "8th Place"
+  },
+  {
+    "id": 4,
+    "name": "Maliha Rahman",
+    "photo": "https://randomuser.me/api/portraits/women/68.jpg",
+    "marathonName": "Sylhet Tea Garden Marathon",
+    "quote": "Breathe. Believe. Run. Repeat til the finish line",
+    "position": "11th Place"
+  },
+  {
+    "id": 5,
+    "name": "Sabbir Khan",
+    "photo": "https://randomuser.me/api/portraits/men/19.jpg",
+    "marathonName": "Sundarbans Trail Run",
+    "quote": "Pain is temporary. Pride is forever. Trust Yourself",
+    "position": "15th Place"
+  }
+]
