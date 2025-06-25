@@ -2,9 +2,11 @@
 
 # Project overview
 
-project name : Marathon Management Platform
+project name : Marathon Management System
 
 webpage name : Runfinity
+
+Marathon Management System Server Repository -> [Click Here](https://github.com/MMunim90/Marathol-management-system-server)
 
 purpose : Runfinity is a Marathon Management Platform designed to simplify the organization and participation of marathon events. It allows organizers to manage registrations, schedules, routes, and results efficiently, while providing runners with easy access to event details, tracking, and updates. Runfinity enhances the overall marathon experience by promoting seamless communication, real-time updates, and data-driven insights, making marathon planning and participation more organized, engaging, and efficient for everyone involved.
 
