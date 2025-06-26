@@ -6,11 +6,11 @@ project name : Marathon Management System
 
 webpage name : Runfinity
 
-Marathon Management System Server Repository -> [Click Here](https://github.com/MMunim90/Marathol-management-system-server)
+### Marathon Management System Server Repository -> [Click Here](https://github.com/MMunim90/Marathol-management-system-server)
 
 purpose : Runfinity is a Marathon Management Platform designed to simplify the organization and participation of marathon events. It allows organizers to manage registrations, schedules, routes, and results efficiently, while providing runners with easy access to event details, tracking, and updates. Runfinity enhances the overall marathon experience by promoting seamless communication, real-time updates, and data-driven insights, making marathon planning and participation more organized, engaging, and efficient for everyone involved.
 
-# Technologies
+# Technologies :
 Vite, nodejs, React.js , localstorage, React Router DOM, Tailwind CSS, DaisyUI, React Icons, React-hot-toast, MongoDB, expressJS, jsonwebtoken.
 
 # Features : 
@@ -33,7 +33,7 @@ Vite, nodejs, React.js , localstorage, React Router DOM, Tailwind CSS, DaisyUI, 
 
 - Find marathon by Search
 
-# Frontend (React) Dependencies
+# Frontend (React) Dependencies :
 
 - vite : 6.3.5,
 
@@ -77,7 +77,7 @@ Vite, nodejs, React.js , localstorage, React Router DOM, Tailwind CSS, DaisyUI, 
 
 - lottie-react : 2.4.1
 
-# Backend (Node.js with Express) Dependencies
+# Backend (Node.js with Express) Dependencies :
 
 - cors : 2.8.5
 
@@ -91,8 +91,8 @@ Vite, nodejs, React.js , localstorage, React Router DOM, Tailwind CSS, DaisyUI, 
 
 - jsonwebtoken : 9.0.2
 
-# How to run this website on local mechine
+# How to run this website on local mechine :
 First make sure Node.js and npm are installed on your system. If not then You can install them from [Node.JS](https://nodejs.org). Next, open a terminal or command prompt and use the git clone command and then paste the copied repository URL to clone the project. After cloning, navigate into the project folder using cd project-name. Once inside the project directory, run npm install to install all the dependencies listed in the package.json file. When the installation is complete, start the development server by running npm run dev. This will launch the React app in your default browser at http://localhost:5173, allowing you to view and work on the website locally. And in the backend first install backend dependencies. at http://localhost:3000 or a similar port. Make sure environment variables like database URI, API keys, or ports are correctly configured, start the development server by running nodemon index.js, typically using a .env file in both the frontend and backend directories.
 
-# Live Link
+# Live Link :
 [Runfinity](https://marathon-management-syst-9bb4a.web.app/)
