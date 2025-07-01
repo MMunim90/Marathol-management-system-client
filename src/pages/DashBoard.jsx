@@ -20,17 +20,13 @@ const DashBoard = () => {
         <Navbar></Navbar>
       </div>
       <div className="flex flex-col h-screen w-11/12 mx-auto">
-        <header className="border-b shadow-sm py-4 flex items-center justify-between md:justify-start mt-6">
+        <header className="py-4 flex items-center justify-between md:justify-start mt-6">
           <button
             className="md:hidden text-2xl"
             onClick={() => setIsSidebarOpen(!isSidebarOpen)} // Sidebar open and close toggle
           >
             {isSidebarOpen ? <FiX /> : <FiMenu />}
           </button>
-          <h1 className="text-xl font-bold ml-4">
-            Marathon Dashboard -{" "}
-            <span className="">{user.displayName}!</span>
-          </h1>
         </header>
 
         <div className="flex flex-grow">
