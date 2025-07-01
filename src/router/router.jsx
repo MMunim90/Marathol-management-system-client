@@ -15,6 +15,7 @@ import MarathonList from "../pages/MarathonList";
 import ApplyList from "../pages/ApplyList";
 import MarathonRegistration from "../pages/MarathonRegistration";
 import Tips from "../pages/Tips";
+import AboutUs from "../pages/AboutUs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,12 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         loader: () => fetch(`${import.meta.env.VITE_API_URL}/homeMarathons`),
         hydrateFallbackElement: <Loading></Loading>,
+      },
+      {
+        path: "about",
+        element: (
+            <AboutUs></AboutUs>
+        ),
       },
       {
         path: "marathon",

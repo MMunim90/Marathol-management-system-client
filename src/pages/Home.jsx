@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "../components/Slider";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import AdCard from "../components/AdCard";
 import { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -10,6 +10,7 @@ import PerticipantsSay from "../components/PerticipantsSay";
 import LimeLight from "../components/LimeLight";
 import Sponsors from "../components/Sponsors";
 import Gallery from "../components/Gallery";
+import { MdArrowOutward } from "react-icons/md";
 
 const Home = () => {
   const slightFadeDown = keyframes`
@@ -38,12 +39,14 @@ const Home = () => {
       </Fade>
 
       <Fade direction="down" keyframes={slightFadeDown}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           {allAds
             .map((marathon) => (
               <AdCard key={marathon._id} marathon={marathon}></AdCard>
             ))}
         </div>
+
+        <Link to='/marathon' className="flex justify-center items-center gap-2 text-xl px-8 py-4"><MdArrowOutward size={30}/>View More Post</Link>
       </Fade>
 
       <Fade direction="down" keyframes={slightFadeDown}>

@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const ErrorPage = () => {
   return (
-    <div className="w-11/12 flex flex-col justify-center items-center">
+    <div className="w-11/12 mx-auto flex flex-col justify-center items-center bg-white pb-20">
     <img src="https://i.ibb.co/v4THdMnz/404.gif" alt="" />
     <button className="btn font-bold text-xl py-6 text-center">
         <FaArrowLeftLong className="inline" /> &nbsp;

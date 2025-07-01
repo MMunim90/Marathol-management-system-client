@@ -9,7 +9,7 @@ import {
   MdPlaylistAddCircle,
   MdTipsAndUpdates,
 } from "react-icons/md";
-import { FaHome, FaRunning } from "react-icons/fa";
+import { FaHome, FaRunning, FaUserFriends } from "react-icons/fa";
 import { BiLogOut } from "react-icons/bi";
 import Swal from "sweetalert2";
 import { BsSearch } from "react-icons/bs";
@@ -142,6 +142,15 @@ const Navbar = () => {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? "border-b-2" : "")}
+                to="/about"
+              >
+                <FaUserFriends />
+                About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) => (isActive ? "border-b-2" : "")}
                 to="/marathon"
               >
                 <FaRunning />
@@ -230,6 +239,15 @@ const Navbar = () => {
               >
                 <FaHome />
                 Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) => (isActive ? "border-b-2" : "")}
+                to="/about"
+              >
+                <FaUserFriends />
+                About Us
               </NavLink>
             </li>
             <li>
@@ -343,7 +361,7 @@ const Navbar = () => {
           {user ? (
             <button
               onClick={handleLogOut}
-              className="btn cursor-pointer text-xl"
+              className="btn cursor-pointer text-xl pr-2"
             >
               <BiLogOut />
               Log out
