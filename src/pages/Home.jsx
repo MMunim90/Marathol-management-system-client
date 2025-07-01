@@ -8,6 +8,8 @@ import { Helmet } from "react-helmet-async";
 import Upcomings from "../components/Upcomings";
 import PerticipantsSay from "../components/PerticipantsSay";
 import LimeLight from "../components/LimeLight";
+import Sponsors from "../components/Sponsors";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   const slightFadeDown = keyframes`
@@ -27,17 +29,14 @@ const Home = () => {
       <Helmet>
         <title>Home | Runfinity</title>
       </Helmet>
-      <Fade direction="down" keyframes={slightFadeDown}>
-        <div className="">
-          <Slider></Slider>
-        </div>
-      </Fade>
+      
       <Fade direction="down" keyframes={slightFadeDown}>
         <h1 className="font-bold text-3xl lg:text-5xl text-center my-10">
           Marathons
         </h1>
         <p className="text-center opacity-50">Explore completed marathon highlights, winners, memorable runs, and community celebrations from past events.</p>
       </Fade>
+
       <Fade direction="down" keyframes={slightFadeDown}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           {allAds
@@ -68,6 +67,18 @@ const Home = () => {
       <Fade direction="down" keyframes={slightFadeDown}>
         <div>
           <LimeLight></LimeLight>
+        </div>
+      </Fade>
+
+      <Fade direction="down" keyframes={slightFadeDown}>
+        <div>
+          <Gallery></Gallery>
+        </div>
+      </Fade>
+
+      <Fade direction="down" keyframes={slightFadeDown}>
+        <div>
+          <Sponsors></Sponsors>
         </div>
       </Fade>
 

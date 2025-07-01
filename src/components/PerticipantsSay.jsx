@@ -16,7 +16,7 @@ const PerticipantsSay = () => {
           });
         }, [])
     return (
-        <div className="w-full mx-auto p-1 my-10 border bg-gray-500">
+        <div className="w-full mx-auto p-1 my-10 border bg-gray-500 rounded-2xl">
 
   <Swiper
     modules={[Pagination, Navigation, Autoplay]}

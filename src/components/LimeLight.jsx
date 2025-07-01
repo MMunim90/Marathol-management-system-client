@@ -9,10 +9,11 @@ const LimeLight = () => {
   return (
     <div className="flex flex-col md:flex-row gap-5">
       {/* Card 1 */}
-      <div className="border rounded">
-        <div className="card bg-base-100 shadow-sm">
+      <div className="border rounded-2xl">
+        <div className="card">
           <figure>
             <img
+            className="rounded-t-2xl"
               src="https://i.ibb.co/bMtDWBvJ/lime1.jpg"
               alt="marathon"
             />
@@ -56,7 +57,7 @@ const LimeLight = () => {
 
       {/* card 2 */}
       <div className="md:w-full">
-        <div className="card bg-base-100 shadow-sm border rounded">
+        <div className="card bg-base-100 shadow-sm border rounded-2xl">
           <figure>
             <img
               src="https://i.ibb.co/6Jrwj2RB/lime2.png"

@@ -262,8 +262,8 @@ const Navbar = () => {
         </div>
         <div className="flex gap-4 items-center">
           {!user ? (
-            <div className=" md:text-xl font-bold btn btn-outline border-black rounded-xl cursor-pointer">
-              <Link to="/register" className="cursor-pointer">
+            <div className="md:text-xl font-bold btn btn-outline border-black rounded-xl cursor-pointer hidden md:block md:pt-0.5">
+              <Link to="/register">
                 Register
               </Link>
             </div>
@@ -272,8 +272,8 @@ const Navbar = () => {
           )}
 
           {!user ? (
-            <div className=" md:text-xl font-bold btn border-none  rounded-lg cursor-pointer">
-              <Link to="/login" className="cursor-pointer">
+            <div className="md:text-xl font-bold btn border-none rounded-lg cursor-pointer">
+              <Link to="/login">
                 Login
               </Link>
             </div>
