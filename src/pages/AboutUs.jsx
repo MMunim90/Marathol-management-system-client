@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { FaBullseye, FaRegLightbulb, FaRunning } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -15,19 +16,27 @@ const AboutUs = () => {
         </p>
 
         <div className="grid gap-8 md:grid-cols-3 mt-10">
+          {/* Mission */}
           <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+            <FaBullseye className="text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
             <p>
               To empower athletes and organizers by providing an efficient platform to manage and promote marathon events.
             </p>
           </div>
+
+          {/* What We Offer */}
           <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+            <FaRegLightbulb className="text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">What We Offer</h3>
             <p>
               Online registration, real-time updates, event promotion, sponsor management, and participant engagement — all in one place.
             </p>
           </div>
+
+          {/* Join the Run */}
           <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+            <FaRunning className="text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Join the Run</h3>
             <p>
               Become part of a growing community of runners and event organizers working together to celebrate endurance and passion.

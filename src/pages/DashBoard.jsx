@@ -11,7 +11,7 @@ const DashBoard = () => {
 
   useEffect(() => {
     if (window.location.pathname === "/dashboard") {
-      navigate("/dashboard/addMarathon");
+      navigate("/dashboard/profile");
     }
   }, [navigate]);
   return (
@@ -43,6 +43,16 @@ const DashBoard = () => {
               Dashboard
             </div>
             <nav className="flex-grow mt-4 space-y-3 px-4">
+              <NavLink
+                to="/dashboard/profile"
+                className={({ isActive }) =>
+                  `block py-2 px-4 rounded transition  ${
+                    isActive ? "bg-gray-900 text-white" : ""
+                  }`
+                }
+              >
+                Profile and Overview
+              </NavLink>
               <NavLink
                 to="/dashboard/addMarathon"
                 className={({ isActive }) =>

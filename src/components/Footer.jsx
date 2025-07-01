@@ -14,12 +14,12 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">Company</h6>
           <Link to='/about' className="link link-hover">About us</Link>
-          <a className="link link-hover">Contact</a>
+          <Link to='/contact' className="link link-hover">Contact</Link>
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
+          <Link to='/terms' className="link link-hover">Terms of use</Link>
+          <Link to='/privacy' className="link link-hover">Privacy policy</Link>
         </nav>
       </footer>
       <footer className="footer bg-gray-400 text-base-content border-base-300 border-t px-10 py-4">

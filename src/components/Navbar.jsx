@@ -325,17 +325,6 @@ const Navbar = () => {
                   User : {user && user.displayName}
                 </a>
               </li>
-              {user ? (
-                <NavLink
-                  to="/profile"
-                  className="btn bg-black text-white cursor-pointer text-xl"
-                >
-                  <CgProfile />
-                  Profile
-                </NavLink>
-              ) : (
-                ""
-              )}
               <button className="btn bg-black text-white cursor-pointer">
                 <label className="swap swap-rotate">
                   <input type="checkbox" onClick={handleToggle} />

@@ -3,7 +3,7 @@ import { FaUserShield } from "react-icons/fa";
 
 const PrivacyPolicy = () => {
   return (
-    <section className="bg-gray-400 py-16 px-6 rounded-2xl">
+    <section className="bg-gray-400 py-16 px-6 rounded-2xl my-10 min-h-screen">
       <Helmet>
         <title>Privacy Policy | Marathon Management</title>
       </Helmet>

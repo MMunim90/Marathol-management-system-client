@@ -3,7 +3,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section className="bg-gray-400 py-16 px-6 rounded-2xl">
+    <section className="bg-gray-400 py-16 px-6 rounded-2xl my-10 min-h-screen">
       <Helmet>
         <title>Contact Us | Marathon Management</title>
       </Helmet>
@@ -15,13 +15,13 @@ const Contact = () => {
           <div className="flex flex-col items-center">
             <MdEmail className="text-4xl mb-2" />
             <h3 className="text-xl font-semibold mb-1">Email</h3>
-            <p>support@marathonhub.com</p>
+            <p>runfinity@gmail.com</p>
           </div>
 
           <div className="flex flex-col items-center">
             <MdPhone className="text-4xl mb-2" />
             <h3 className="text-xl font-semibold mb-1">Phone</h3>
-            <p>+880 1234 567 890</p>
+            <p>+880 454478824</p>
           </div>
 
           <div className="flex flex-col items-center">

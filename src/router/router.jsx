@@ -16,6 +16,9 @@ import ApplyList from "../pages/ApplyList";
 import MarathonRegistration from "../pages/MarathonRegistration";
 import Tips from "../pages/Tips";
 import AboutUs from "../pages/AboutUs";
+import Contact from "../pages/Contact";
+import TermsOfUse from "../pages/TermsOfUse";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,9 +33,19 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: (
-            <AboutUs></AboutUs>
-        ),
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "terms",
+        element: <TermsOfUse></TermsOfUse>,
+      },
+      {
+        path: "privacy",
+        element: <PrivacyPolicy></PrivacyPolicy>,
       },
       {
         path: "marathon",
@@ -81,6 +94,15 @@ const router = createBrowserRouter([
     ),
     children: [
       {
+        path: "/dashboard/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
+        hydrateFallbackElement: <Loading></Loading>,
+      },
+      {
         path: "/dashboard/addMarathon",
         element: <AddMarathon></AddMarathon>,
       },
@@ -103,15 +125,6 @@ const router = createBrowserRouter([
     ),
     loader: ({ params }) =>
       fetch(`${import.meta.env.VITE_API_URL}/allMarathon/${params.id}`),
-    hydrateFallbackElement: <Loading></Loading>,
-  },
-  {
-    path: "/profile",
-    element: (
-      <PrivateRoute>
-        <Profile></Profile>
-      </PrivateRoute>
-    ),
     hydrateFallbackElement: <Loading></Loading>,
   },
   {

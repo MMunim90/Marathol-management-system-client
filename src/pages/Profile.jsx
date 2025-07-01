@@ -52,9 +52,6 @@ const Profile = () => {
       <Helmet>
         <title>Runfinity | Profile</title>
       </Helmet>
-      <header>
-        <Navbar></Navbar>
-      </header>
       <div className="w-11/12 mx-auto mt-20 grid grid-cols-1 items-center">
         <Fade direction="down" keyframes={slightFadeDown}>
           <div className="flex flex-col items-center gap-8 md:mb-10">
