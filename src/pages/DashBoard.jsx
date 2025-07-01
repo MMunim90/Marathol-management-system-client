@@ -16,7 +16,7 @@ const DashBoard = () => {
   }, [navigate]);
   return (
     <div>
-      <div className='sticky top-0 z-50'>
+      <div className="sticky top-0 z-50">
         <Navbar></Navbar>
       </div>
       <div className="flex flex-col h-screen w-11/12 mx-auto">
@@ -39,46 +39,50 @@ const DashBoard = () => {
               Dashboard
             </div>
             <nav className="flex-grow mt-4 space-y-3 px-4">
-              <NavLink
-                to="/dashboard/profile"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded transition  ${
-                    isActive ? "bg-gray-900 text-white" : ""
-                  }`
-                }
-              >
-                Profile and Overview
-              </NavLink>
-              <NavLink
-                to="/dashboard/addMarathon"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded transition  ${
-                    isActive ? "bg-gray-900 text-white" : ""
-                  }`
-                }
-              >
-                Add Marathon
-              </NavLink>
-              <NavLink
-                to="/dashboard/marathonList"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded transition ${
-                    isActive ? "bg-gray-900 text-white" : ""
-                  }`
-                }
-              >
-                My Marathon List
-              </NavLink>
-              <NavLink
-                to="/dashboard/applyList"
-                className={({ isActive }) =>
-                  `block py-2 px-4 rounded transition ${
-                    isActive ? "bg-gray-900 text-white" : ""
-                  }`
-                }
-              >
-                My Apply List
-              </NavLink>
+              {user && (
+                <div>
+                  <NavLink
+                    to="/dashboard/profile"
+                    className={({ isActive }) =>
+                      `block py-2 px-4 rounded transition  ${
+                        isActive ? "bg-gray-900 text-white" : ""
+                      }`
+                    }
+                  >
+                    Profile and Overview
+                  </NavLink>
+                  <NavLink
+                    to="/dashboard/addMarathon"
+                    className={({ isActive }) =>
+                      `block py-2 px-4 rounded transition  ${
+                        isActive ? "bg-gray-900 text-white" : ""
+                      }`
+                    }
+                  >
+                    Add Marathon
+                  </NavLink>
+                  <NavLink
+                    to="/dashboard/marathonList"
+                    className={({ isActive }) =>
+                      `block py-2 px-4 rounded transition ${
+                        isActive ? "bg-gray-900 text-white" : ""
+                      }`
+                    }
+                  >
+                    My Marathon List
+                  </NavLink>
+                  <NavLink
+                    to="/dashboard/applyList"
+                    className={({ isActive }) =>
+                      `block py-2 px-4 rounded transition ${
+                        isActive ? "bg-gray-900 text-white" : ""
+                      }`
+                    }
+                  >
+                    My Apply List
+                  </NavLink>
+                </div>
+              )}
             </nav>
           </aside>
 
