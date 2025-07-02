@@ -49,11 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "marathon",
-        element: (
-          <PrivateRoute>
-            <Marathon></Marathon>
-          </PrivateRoute>
-        ),
+        element: <Marathon></Marathon>
       },
       {
         path: "marathonDetail/:id",
