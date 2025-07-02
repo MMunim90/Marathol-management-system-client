@@ -1,5 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Marquee from "react-fast-marquee";
 
 const sponsors = [
   {
@@ -51,11 +52,12 @@ const Sponsors = () => {
         Meet Our Proud Sponsors Powering Every Step – Trusted Brands Supporting
         Runners, Endurance, and the Spirit of Every Marathon Journey
       </p>
-      <div className="flex flex-wrap justify-center items-center gap-8 px-4">
+
+      <Marquee gradient={false} speed={40} pauseOnHover={true} className="py-4">
         {sponsors.map((sponsor, i) => (
           <div
             key={i}
-            className="w-32 h-20 flex items-center justify-center bg-white p-2 rounded-md grayscale hover:grayscale-0 transition duration-300 shadow-md"
+            className="w-32 h-20 mx-8 md:mx-24 flex items-center justify-center bg-white p-2 rounded-md grayscale hover:grayscale-0 transition duration-300 border-3 border-black"
           >
             <img
               src={sponsor.logo}
@@ -64,7 +66,9 @@ const Sponsors = () => {
             />
           </div>
         ))}
-      </div>
+      </Marquee>
+
+      {/* <div className="flex flex-wrap justify-center items-center gap-8 px-4"></div> */}
     </section>
   );
 };
