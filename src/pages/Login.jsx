@@ -78,7 +78,7 @@ const Login = () => {
       <Helmet>
         <title>Login | Runfinity</title>
       </Helmet>
-      <div className="w-full lg:max-w-md p-8 space-y-3 my-10 mx-auto">
+      <div className="w-full lg:max-w-md p-8 space-y-3 my-10 mx-auto md:w-6/12 lg:w-full">
         <FadeIn>
           <h1 className="text-2xl md:text-4xl font-bold text-start mb-8">
             Login Your Account
