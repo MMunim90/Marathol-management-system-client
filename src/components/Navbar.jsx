@@ -170,16 +170,6 @@ const Navbar = () => {
             ) : (
               ""
             )}
-
-            <li>
-              <NavLink
-                className={({ isActive }) => (isActive ? "border-b-2" : "")}
-                to="/contact"
-              >
-                <FaUserFriends />
-                Contact
-              </NavLink>
-            </li>
           </ul>
         </div>
         <div className="flex items-center">
@@ -291,16 +281,6 @@ const Navbar = () => {
             ) : (
               ""
             )}
-
-             <li>
-              <NavLink
-                className={({ isActive }) => (isActive ? "border-b-2" : "")}
-                to="/contact"
-              >
-                <FaUserFriends />
-                Contact
-              </NavLink>
-            </li>
           </ul>
         </div>
         <div className="flex gap-4 items-center">
