@@ -106,7 +106,7 @@ const Navbar = () => {
   }, [search]);
 
   return (
-    <div className="navbar bg-gray-400 shadow-sm px-4">
+    <div className="navbar bg-gray-400 shadow-sm px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -170,6 +170,16 @@ const Navbar = () => {
             ) : (
               ""
             )}
+
+            <li>
+              <NavLink
+                className={({ isActive }) => (isActive ? "border-b-2" : "")}
+                to="/contact"
+              >
+                <FaUserFriends />
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="flex items-center">
@@ -234,7 +244,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <div className="hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-xl">
+          <ul className="menu menu-horizontal px-1 text-lg">
             <li>
               <NavLink
                 className={({ isActive }) =>
@@ -281,6 +291,16 @@ const Navbar = () => {
             ) : (
               ""
             )}
+
+             <li>
+              <NavLink
+                className={({ isActive }) => (isActive ? "border-b-2" : "")}
+                to="/contact"
+              >
+                <FaUserFriends />
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="flex gap-4 items-center">
