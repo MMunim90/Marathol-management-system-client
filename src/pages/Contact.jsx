@@ -3,7 +3,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section className="bg-gray-400 py-16 px-6 rounded-2xl my-10 min-h-screen">
+    <section className="bg-gray-400 py-16 px-6 rounded-2xl my-10 min-h-screen flex items-center">
       <Helmet>
         <title>Contact Us | Marathon Management</title>
       </Helmet>

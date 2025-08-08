@@ -319,17 +319,22 @@ const Navbar = () => {
             )}
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-80 p-2 shadow space-y-2"
             >
               <li>
-                <a className="text-2xl font-bold">
+                <a className="text-xl font-bold">
                   User : {user && user.displayName}
+                </a>
+              </li>
+              <li>
+                <a className="text-lg text-blue-600">
+                  Email : {user && user.email}
                 </a>
               </li>
               {user ? (
                 <button
                   onClick={handleLogOut}
-                  className="btn cursor-pointer text-xl pr-2"
+                  className="btn cursor-pointer text-xl pr-2 border-3 border-gray-500"
                 >
                   <BiLogOut />
                   Log out

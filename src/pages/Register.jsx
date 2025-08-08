@@ -10,6 +10,7 @@ import Lottie from "lottie-react";
 
 import registerLottie from "../../src/assets/lotties/register.json";
 import { Helmet } from "react-helmet-async";
+import FadeIn from "react-fade-in";
 
 const Register = () => {
   const { createUser, setUser, updateUserProfile, signInWithGoogle } =
@@ -102,107 +103,121 @@ const Register = () => {
     }
   }, [passwordError]);
   return (
-    <div className="hero-content flex-col lg:flex-row">
+    <div className="hero-content flex-col lg:flex-row w-full mx-auto">
       <Helmet>
         <title>Register | Runfinity</title>
       </Helmet>
-      <div className="text-center lg:text-left w-auto">
-        <Lottie animationData={registerLottie} loop={true}></Lottie>
-      </div>
-      <div className="w-full lg:max-w-md p-8 space-y-3 rounded-xl bg-gray-400 mx-auto my-10">
-        <h1 className="text-2xl font-bold text-center">Register</h1>
-        <form onSubmit={handleRegister} className="space-y-6">
-          <div className="space-y-1 text-sm">
-            <label htmlFor="username" className="block dark:text-gray-600">
-              Username
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="username"
-              placeholder="Username"
-              required
-              className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800"
-            />
-          </div>
-
-          <div className="space-y-1 text-sm">
-            <label className="block text-gray-600">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-              className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800"
-            />
-          </div>
-
-          <div className="space-y-1 text-sm">
-            <label className="block text-gray-600">Photo URL</label>
-            <input
-              type="text"
-              name="photoURL"
-              id="photoURL"
-              placeholder="Photo URL"
-              required
-              className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800"
-            />
-          </div>
-
-          <div className="space-y-1 text-sm">
-            <label htmlFor="password" className="block dark:text-gray-600">
-              Password
-            </label>
-            <div className="relative">
+      <div className="w-full lg:max-w-md p-8 space-y-3 rounded-xl mx-auto my-10">
+        <FadeIn>
+          <h1 className="text-2xl md:text-4xl font-bold text-start mb-8">
+            Register Now
+          </h1>
+          <form onSubmit={handleRegister} className="space-y-6">
+            <div className="space-y-1 text-sm">
+              {/* <label htmlFor="username" className="block dark:text-gray-600">
+                Username
+              </label> */}
               <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                id="password"
-                placeholder="Password"
+                type="text"
+                name="name"
+                id="username"
+                placeholder="Username"
                 required
-                className="w-full px-4 py-3 rounded-md border-gray-300 bg-gray-50 text-gray-800"
+                className="w-full px-4 py-3 rounded-md border-gray-400 border-3 bg-gray-50 text-gray-800"
               />
-              <button
-                onClick={() => {
-                  setShowPassword(!showPassword);
-                }}
-                className="btn btn-xs absolute top-[10px] right-4 bg-gray-400"
-              >
-                {showPassword ? <FaEyeSlash size={16} /> : <FaEye size={16} />}
-              </button>
             </div>
 
-            {passwordError && (
-              <p className="text-red-600 text-xs">{passwordError}</p>
-            )}
+            <div className="space-y-1 text-sm">
+              {/* <label className="block text-gray-600">Email</label> */}
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                className="w-full px-4 py-3 rounded-md border-gray-400 border-3 bg-gray-50 text-gray-800"
+              />
+            </div>
+
+            <div className="space-y-1 text-sm">
+              {/* <label className="block text-gray-600">Photo URL</label> */}
+              <input
+                type="text"
+                name="photoURL"
+                id="photoURL"
+                placeholder="Photo URL"
+                required
+                className="w-full px-4 py-3 rounded-md border-gray-400 border-3 bg-gray-50 text-gray-800"
+              />
+            </div>
+
+            <div className="space-y-1 text-sm">
+              {/* <label htmlFor="password" className="block dark:text-gray-600">
+                Password
+              </label> */}
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                  className="w-full px-4 py-3 rounded-md border-gray-400 border-3 bg-gray-50 text-gray-800"
+                />
+                <button
+                  onClick={() => {
+                    setShowPassword(!showPassword);
+                  }}
+                  className="btn btn-xs absolute top-[12px] right-4 bg-gray-400"
+                >
+                  {showPassword ? (
+                    <FaEyeSlash size={16} />
+                  ) : (
+                    <FaEye size={16} />
+                  )}
+                </button>
+              </div>
+
+              {passwordError && (
+                <p className="text-red-600 text-xs">{passwordError}</p>
+              )}
+            </div>
+            <button
+              type="submit"
+              className="block w-full p-3 text-center text-white text-2xl font-bold rounded-sm bg-black cursor-pointer"
+            >
+              Register
+            </button>
+          </form>
+          <div className="flex items-center pt-4 space-x-1">
+            <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
+            <p className="px-3 text-2xl font-bold">OR</p>
+            <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
           </div>
-          <button
-            type="submit"
-            className="block w-full p-3 text-center text-white text-2xl font-bold rounded-sm bg-black cursor-pointer"
-          >
-            Register
-          </button>
-        </form>
-        <div className="flex items-center pt-4 space-x-1">
-          <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
-          <p className="px-3 text-2xl font-bold">OR</p>
-          <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
-        </div>
-        <div className="flex justify-center space-x-4 my-6">
-          <button
-            onClick={handleGoogleSignIn}
-            className="btn btn-outline text-xl w-full py-8 lg:py-6"
-          >
-            <FcGoogle size={24} /> Register With Google
-          </button>
-        </div>
-        <p className="text-md text-center sm:px-6 dark:text-gray-600">
-          Already have an account?
-          <Link to="/login" className="ml-2 underline text-black">
-            Log in
-          </Link>
-        </p>
+          <div className="flex justify-center space-x-4 my-6">
+            <button
+              onClick={handleGoogleSignIn}
+              className="btn btn-outline text-xl w-full py-8 lg:py-6"
+            >
+              <FcGoogle size={24} /> Register With Google
+            </button>
+          </div>
+          <p className="text-md text-center sm:px-6">
+            Already have an account?
+            <Link to="/login" className="ml-2 underline text-blue-500">
+              Log in
+            </Link>
+          </p>
+          <p className="text-md text-center sm:px-6 mt-2">
+            Back to
+            <Link to="/" className="ml-2 underline text-blue-500">
+              Home
+            </Link>
+          </p>
+        </FadeIn>
+      </div>
+      <div className="hidden lg:block text-center lg:text-left w-auto">
+        <Lottie animationData={registerLottie} loop={true}></Lottie>
       </div>
     </div>
   );

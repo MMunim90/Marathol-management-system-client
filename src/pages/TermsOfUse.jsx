@@ -3,7 +3,7 @@ import { FaRegFileAlt } from "react-icons/fa";
 
 const TermsOfUse = () => {
   return (
-    <section className="bg-gray-400 py-16 px-6 rounded-2xl my-10 min-h-screen">
+    <section className="bg-gray-400 py-16 px-6 rounded-2xl my-10 min-h-screen flex items-center">
       <Helmet>
         <title>Terms of Use | Marathon Management</title>
       </Helmet>

@@ -4,7 +4,7 @@ import { FaBullseye, FaRegLightbulb, FaRunning } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <section className="py-16 bg-gray-400 px-6 min-h-screen my-10 rounded-2xl">
+    <section className="py-16 bg-gray-400 px-6 min-h-screen my-10 rounded-2xl flex items-center">
       <Helmet>
         <title>About Us | Marathon Management</title>
       </Helmet>
@@ -17,7 +17,7 @@ const AboutUs = () => {
 
         <div className="grid gap-8 md:grid-cols-3 mt-10">
           {/* Mission */}
-          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 border-3">
             <FaBullseye className="text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
             <p>
@@ -26,7 +26,7 @@ const AboutUs = () => {
           </div>
 
           {/* What We Offer */}
-          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 border-3">
             <FaRegLightbulb className="text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">What We Offer</h3>
             <p>
@@ -35,7 +35,7 @@ const AboutUs = () => {
           </div>
 
           {/* Join the Run */}
-          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <div className="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 border-3">
             <FaRunning className="text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Join the Run</h3>
             <p>

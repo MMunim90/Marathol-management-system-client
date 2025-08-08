@@ -49,17 +49,13 @@ const router = createBrowserRouter([
       },
       {
         path: "marathon",
-        element: <Marathon></Marathon>
+        element: <Marathon></Marathon>,
       },
       {
         path: "marathonDetail/:id",
         loader: ({ params }) =>
           fetch(`${import.meta.env.VITE_API_URL}/allMarathon/${params.id}`),
-        element: (
-          <PrivateRoute>
-            <MarathonDetails></MarathonDetails>
-          </PrivateRoute>
-        ),
+        element: <MarathonDetails></MarathonDetails>,
         hydrateFallbackElement: <Loading></Loading>,
       },
       {
