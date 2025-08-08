@@ -45,7 +45,7 @@ const DashBoard = () => {
                     to="/dashboard/profile"
                     className={({ isActive }) =>
                       `block py-2 px-4 rounded transition  ${
-                        isActive ? "bg-gray-900 text-white" : ""
+                        isActive ? "bg-gray-900 text-white" : "text-gray-400"
                       }`
                     }
                   >
@@ -55,7 +55,7 @@ const DashBoard = () => {
                     to="/dashboard/addMarathon"
                     className={({ isActive }) =>
                       `block py-2 px-4 rounded transition  ${
-                        isActive ? "bg-gray-900 text-white" : ""
+                        isActive ? "bg-gray-900 text-white" : "text-gray-400"
                       }`
                     }
                   >
@@ -65,7 +65,7 @@ const DashBoard = () => {
                     to="/dashboard/marathonList"
                     className={({ isActive }) =>
                       `block py-2 px-4 rounded transition ${
-                        isActive ? "bg-gray-900 text-white" : ""
+                        isActive ? "bg-gray-900 text-white" : "text-gray-400"
                       }`
                     }
                   >
@@ -75,7 +75,7 @@ const DashBoard = () => {
                     to="/dashboard/applyList"
                     className={({ isActive }) =>
                       `block py-2 px-4 rounded transition ${
-                        isActive ? "bg-gray-900 text-white" : ""
+                        isActive ? "bg-gray-900 text-white" : "text-gray-400"
                       }`
                     }
                   >
