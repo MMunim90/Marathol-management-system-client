@@ -7,7 +7,7 @@ const images = [
     detail: "Jersey City Marathon 2025 – Energetic crowd and vibrant atmosphere."
   },
   {
-    src: "https://melbournemarathon.com.au/wp-content/uploads/2023/01/221002_MelbMara22_IMGEvents_1570.jpg",
+    src: "https://melbournemarathon.com.au/wp-content/uploads/2022/10/221002_MelbMara22_IMGEvents_2313-scaled-1.jpg",
     detail: "Melbourne Marathon 2023 – Capturing peak moments near the finish line."
   },
   {
@@ -19,11 +19,11 @@ const images = [
     detail: "Sydney Marathon 2025 – Racing under intense heat conditions."
   },
   {
-    src: "https://melbournemarathon.com.au/wp-content/gallery/2018-gallery/MG_4760-2.jpg",
+    src: "https://runningmagazine.ca/wp-content/uploads/2017/01/NYCM16_DG_296.jpg",
     detail: "Melbourne 2018 – Mid-race action moment."
   },
   {
-    src: "https://melbournemarathon.com.au/wp-content/gallery/2018-gallery/5D1_0386.jpg",
+    src: "https://images.7news.com.au/publication/C-16384727/6327ea01900cfafc39751cdfd7dcd76410284097.jpg?imwidth=650&impolicy=sevennews_v2",
     detail: "Runners pacing through the final stretch in Melbourne 2018."
   },
 ];
