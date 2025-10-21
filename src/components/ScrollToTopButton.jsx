@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-28 right-3 md:bottom-6 md:right-6 p-2 md:p-3 rounded-full bg-gray-600 text-white shadow-lg hover:bg-gray-700 transition cursor-pointer mb-14"
+      className="fixed bottom-34 md:bottom-6 right-6 p-3 rounded-full bg-gray-600 text-white shadow-lg hover:bg-gray-700 transition cursor-pointer mb-14"
     >
       <ArrowUp size={20} />
     </button>

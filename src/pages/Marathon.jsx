@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet-async";
 import Loading from "../components/Loading";
@@ -6,8 +6,11 @@ import MarathonCard from "../components/MarathonCard";
 import { Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import AskAIButton from "../components/AskAIButton";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Marathon = () => {
+  const { user } = use(AuthContext);
   const [marathons, setMarathons] = useState([]);
   const [sortOrder, setSortOrder] = useState("desc");
   const [loading, setLoading] = useState(true);
@@ -127,6 +130,9 @@ const Marathon = () => {
         )}
       </Fade>
       <ScrollToTopButton />
+      {
+        user && <AskAIButton />
+      }
     </div>
   );
 };

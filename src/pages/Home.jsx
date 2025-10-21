@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import Slider from "../components/Slider";
 import { Link, useLoaderData } from "react-router";
 import AdCard from "../components/AdCard";
@@ -13,8 +13,11 @@ import Gallery from "../components/Gallery";
 import { MdArrowOutward } from "react-icons/md";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import MarathonMap from "../components/MarathonMap";
+import AskAIButton from "../components/AskAIButton";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Home = () => {
+  const { user } = use(AuthContext);
   const slightFadeDown = keyframes`
   from {
     opacity: 0;
@@ -106,6 +109,9 @@ const Home = () => {
       </Fade>
 
       <ScrollToTopButton />
+      {
+        user && <AskAIButton />
+      }
     </div>
   );
 };
