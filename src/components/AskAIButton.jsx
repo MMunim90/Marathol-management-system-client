@@ -106,7 +106,7 @@ const AskAIButton = () => {
       {visible && !isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-gray-600 hover:bg-gray-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50 cursor-pointer"
+          className="fixed bottom-6 right-6 bg-gray-600 hover:bg-gray-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50 cursor-pointer mb-28"
           title="Ask AI"
         >
           <FaRobot size={22} />
@@ -123,9 +123,8 @@ const AskAIButton = () => {
             </button>
           </div>
 
-          {/* Chat content area (fixed height + scrollable) */}
           <div
-            className="p-4 space-y-3 overflow-y-auto"
+            className="p-4 space-y-3 overflow-y-auto text-black"
             style={{ height: "300px" }}
           >
             {messages.length === 0 && (
@@ -152,13 +151,13 @@ const AskAIButton = () => {
           </div>
 
           {/* Input field */}
-          <div className="p-3 border-t flex items-center gap-2">
+          <div className="p-3 border-t border-black flex items-center gap-2">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask something..."
-              className="flex-1 border rounded-lg px-3 py-2 text-sm outline-none"
+              className="flex-1 border rounded-lg px-3 py-2 text-sm outline-none text-black"
               onKeyDown={(e) => e.key === "Enter" && handleSend()}
             />
             <button
