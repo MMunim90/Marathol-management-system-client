@@ -281,7 +281,7 @@ const MarathonMap = () => {
         )}
       </div>
 
-      <div className="h-[600px] rounded-lg shadow-lg overflow-hidden">
+      <div className="h-[600px] rounded-l overflow-hidden border-2 border-gray-500">
         <MapContainer
           center={[23.8103, 90.4125]}
           zoom={7}
