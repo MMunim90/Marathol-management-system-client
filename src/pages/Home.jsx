@@ -12,6 +12,7 @@ import Sponsors from "../components/Sponsors";
 import Gallery from "../components/Gallery";
 import { MdArrowOutward } from "react-icons/md";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import MarathonMap from "../components/MarathonMap";
 
 const Home = () => {
   const slightFadeDown = keyframes`
@@ -59,6 +60,12 @@ const Home = () => {
       <Fade direction="down" keyframes={slightFadeDown}>
         <div className="text-center flex justify-center">
           <Upcomings></Upcomings>
+        </div>
+      </Fade>
+
+      <Fade direction="down" keyframes={slightFadeDown}>
+        <div>
+          <MarathonMap></MarathonMap>
         </div>
       </Fade>
 

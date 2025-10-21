@@ -5,6 +5,7 @@ import Loading from '../components/Loading';
 import MarathonCard from '../components/MarathonCard';
 import { Fade } from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const Marathon = () => {
     const [marathons, setMarathons] = useState([]);
@@ -88,6 +89,7 @@ const Marathon = () => {
         </div>
       )}
       </Fade>
+      <ScrollToTopButton />
     </div>
     );
 };
