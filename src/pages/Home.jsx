@@ -11,6 +11,7 @@ import LimeLight from "../components/LimeLight";
 import Sponsors from "../components/Sponsors";
 import Gallery from "../components/Gallery";
 import { MdArrowOutward } from "react-icons/md";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const Home = () => {
   const slightFadeDown = keyframes`
@@ -96,6 +97,8 @@ const Home = () => {
           <PerticipantsSay></PerticipantsSay>
         </div>
       </Fade>
+
+      <ScrollToTopButton />
     </div>
   );
 };
