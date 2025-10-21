@@ -157,19 +157,6 @@ const Navbar = () => {
                 Marathons
               </NavLink>
             </li>
-            {user ? (
-              <li>
-                <NavLink
-                  className={({ isActive }) => (isActive ? "border-b-2" : "")}
-                  to="/dashboard"
-                >
-                  <MdOutlineSpaceDashboard />
-                  Dashboard
-                </NavLink>
-              </li>
-            ) : (
-              ""
-            )}
           </ul>
         </div>
         <div className="flex items-center">
@@ -265,22 +252,7 @@ const Navbar = () => {
                 <FaRunning />
                 Marathons
               </NavLink>
-            </li>
-            {user ? (
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "border-b-2 border-black" : ""
-                  }
-                  to="/dashboard"
-                >
-                  <MdOutlineSpaceDashboard />
-                  Dashboard
-                </NavLink>
-              </li>
-            ) : (
-              ""
-            )}
+            </li>         
           </ul>
         </div>
         <div className="flex gap-4 items-center">
@@ -319,7 +291,7 @@ const Navbar = () => {
             )}
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-80 p-2 shadow space-y-2"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-80"
             >
               <li>
                 <a className="text-xl font-bold">
@@ -331,6 +303,16 @@ const Navbar = () => {
                   Email : {user && user.email}
                 </a>
               </li>
+              {user ? (
+              <li>
+                <NavLink className="text-xl mb-2" to="/dashboard">
+                  <MdOutlineSpaceDashboard />
+                  Dashboard
+                </NavLink>
+              </li>
+            ) : (
+              ""
+            )}
               {user ? (
                 <button
                   onClick={handleLogOut}
